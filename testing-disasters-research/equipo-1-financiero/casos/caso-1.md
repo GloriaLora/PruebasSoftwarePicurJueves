@@ -1,1 +1,5 @@
 # Caso 1 
+| **Año** | **Empresa** | **País** | **Descripción** | **Monto de pérdidas** |
+|----------|--------------|-----------|-----------------|------------------------|
+| 2012 | Knight Capital Group | Estados Unidos | En agosto de 2012, la firma de trading automatizado Knight Capital implementó un nuevo sistema para manejar órdenes bursátiles en la Bolsa de Nueva York. Un error en la actualización del software hizo que uno de los servidores ejecutara un código antiguo usado solo para pruebas, provocando compras y ventas erróneas y masivas durante 45 minutos, lo que generó una gran volatilidad en el mercado. | Aproximadamente **440 millones de dólares** en menos de una hora. |
+
