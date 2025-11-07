@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación del Equipo Financiero</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f7f8fa;
+            color: #222;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #0b3d91;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.8rem;
+            text-align: left;
+        }
+        th {
+            background-color: #e8eefb;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        ul {
+            margin-left: 1.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #0b3d91;
+            color: white;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #eee;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Investigación del Equipo Financiero</h1>
+        <h2>Desastres Financieros y Bancarios</h2>
+        <p>Casos reales de errores de software que causaron pérdidas millonarias</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Caso 1 — Knight Capital Group (Estados Unidos, 2012)</h2>
+            <table>
+                <tr>
+                    <th>Año</th>
+                    <th>Empresa</th>
+                    <th>Descripción</th>
+                    <th>Monto de pérdidas</th>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td><strong>Knight Capital Group (EE. UU.)</strong></td>
+                    <td>Un error en la actualización del software activó código obsoleto de pruebas, generando miles de órdenes erróneas en la Bolsa de Nueva York durante 45 minutos.</td>
+                    <td><strong>440 millones de dólares</strong></td>
+                </tr>
+            </table>
+
+            <h3>¿Qué salió mal y qué pruebas faltaron?</h3>
+            <ul>
+                <li>Se activó software de prueba obsoleto (de 2003) en un servidor de producción.</li>
+                <li>Solo 7 de los 8 servidores se actualizaron correctamente.</li>
+                <li>El sistema ejecutó la rutina <b>Power Peg</b>, diseñada solo para pruebas internas.</li>
+                <li>El algoritmo ejecutó más de 4 millones de órdenes en 45 minutos.</li>
+            </ul>
+
+            <p><strong>Consecuencias:</strong> pérdidas directas de <b>$440 millones</b>, multas de la SEC y la quiebra técnica de la empresa.</p>
+
+            <p><strong>Pruebas que faltaron:</strong></p>
+            <ul>
+                <li>Pruebas de integración entre servidores.</li>
+                <li>Pruebas de regresión.</li>
+                <li>Pruebas de simulación (sandbox trading).</li>
+                <li>Pruebas de control de versiones y despliegue continuo.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Caso 2 — TSB Bank (Reino Unido, 2018)</h2>
+            <table>
+                <tr>
+                    <th>Año</th>
+                    <th>Empresa</th>
+                    <th>Descripción</th>
+                    <th>Monto de pérdidas</th>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td><strong>TSB Bank (Reino Unido)</strong></td>
+                    <td>Una migración fallida de datos impidió que millones de clientes accedieran a sus cuentas y provocó errores graves en transacciones.</td>
+                    <td><strong>400 millones de dólares</strong></td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Caso 3 — Bank of New York Mellon (Estados Unidos, 1996)</h2>
+            <table>
+                <tr>
+                    <th>Año</th>
+                    <th>Empresa</th>
+                    <th>Descripción</th>
+                    <th>Monto de pérdidas</th>
+                </tr>
+                <tr>
+                    <td>1996</td>
+                    <td><strong>Bank of New York Mellon (EE. UU.)</strong></td>
+                    <td>Un error en el software de pagos detuvo transacciones de bonos del Tesoro durante un día. El banco debió pedir un préstamo de emergencia a la Reserva Federal.</td>
+                    <td><strong>$5 millones + préstamo de $23 mil millones</strong></td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Tipos de pruebas críticas en sistemas financieros</h2>
+            <table>
+                <tr>
+                    <th>Tipo de prueba</th>
+                    <th>Propósito</th>
+                    <th>Previene</th>
+                </tr>
+                <tr>
+                    <td><b>Pruebas de regresión</b></td>
+                    <td>Garantizan que actualizaciones no afecten funciones existentes.</td>
+                    <td>Reactivación de código obsoleto.</td>
+                </tr>
+                <tr>
+                    <td><b>Pruebas de integración</b></td>
+                    <td>Aseguran interacción correcta entre módulos (pagos, riesgo, contabilidad).</td>
+                    <td>Inconsistencias entre sistemas.</td>
+                </tr>
+                <tr>
+                    <td><b>Pruebas de estrés y carga</b></td>
+                    <td>Simulan picos de demanda y grandes volúmenes de transacciones.</td>
+                    <td>Colapsos en alta carga.</td>
+                </tr>
+                <tr>
+                    <td><b>Pruebas de seguridad</b></td>
+                    <td>Validan cifrado, autenticación y cumplimiento normativo.</td>
+                    <td>Fraudes y accesos no autorizados.</td>
+                </tr>
+                <tr>
+                    <td><b>Pruebas de failover</b></td>
+                    <td>Verifican la recuperación ante fallas del sistema.</td>
+                    <td>Pérdidas por caídas.</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Caso especial: El Bug del Año 2000 (Y2K)</h2>
+            <p><strong>Qué era el problema:</strong> los sistemas antiguos usaban solo dos dígitos para el año (“99”), lo que podía causar errores al llegar al 2000 (“00”).</p>
+
+            <p><strong>Riesgos:</strong></p>
+            <ul>
+                <li>Errores en cálculos de intereses y fechas.</li>
+                <li>Fallos en cajeros y transferencias.</li>
+                <li>Colapsos en sistemas interbancarios.</li>
+            </ul>
+
+            <p><strong>Prevención:</strong> entre 1997–1999 se reescribieron millones de líneas de código COBOL y se realizaron pruebas de simulación para asegurar el cambio al año 2000.</p>
+
+            <p><strong>Resultado:</strong> el cambio de milenio ocurrió sin incidentes graves, gracias a la planificación global.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Conclusión general</h2>
+            <p>Los casos analizados demuestran que la falta de pruebas adecuadas puede causar pérdidas multimillonarias y afectar la confianza de los clientes. Las <b>pruebas de regresión, integración, estrés y seguridad</b> son esenciales para la estabilidad del software financiero.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Equipo 1 — Desastres Financieros y Bancarios (PICUR Jueves)</p>
+    </footer>
+</body>
+</html>
