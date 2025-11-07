@@ -36,7 +36,7 @@ Knight Capital era una de las firmas más grandes de trading automatizado en Est
 
 ---
 
-## 🏦 Caso 2 — TSB Bank (Reino Unido, 2018)
+## Caso 2 — TSB Bank (Reino Unido, 2018)
 
 | Año | Empresa | Descripción | Monto de pérdidas |
 |-----|----------|--------------|--------------------|
@@ -44,7 +44,7 @@ Knight Capital era una de las firmas más grandes de trading automatizado en Est
 
 ---
 
-## 🏦 Caso 3 — Bank of New York Mellon (Estados Unidos, 1996)
+## Caso 3 — Bank of New York Mellon (Estados Unidos, 1996)
 
 | Año | Empresa | Descripción | Monto de pérdidas |
 |-----|----------|--------------|--------------------|
@@ -52,7 +52,7 @@ Knight Capital era una de las firmas más grandes de trading automatizado en Est
 
 ---
 
-## 🧪 Tipos de pruebas críticas en sistemas financieros
+## Tipos de pruebas críticas en sistemas financieros
 
 | Tipo de prueba | Propósito | Previene |
 |----------------|------------|-----------|
