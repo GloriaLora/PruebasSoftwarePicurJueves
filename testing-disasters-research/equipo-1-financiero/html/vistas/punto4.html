@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Síntesis Crítica</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            background: #fff;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #003366;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #e8f1ff;
+            color: #003366;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f2f6ff;
+        }
+
+        strong {
+            color: #c0392b;
+        }
+
+        .conclusion {
+            background-color: #f8f9fc;
+            padding: 15px;
+            border-left: 4px solid #0056b3;
+            border-radius: 5px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>4. Síntesis Crítica</h1>
+
+    <h2>¿Qué patrones se repiten en todas las industrias?</h2>
+    <p>A partir del análisis de casos reales en banca, finanzas y tecnología, se identifican cinco patrones universales que se repiten en cualquier industria:</p>
+
+    <table>
+        <tr>
+            <th>Patrón Universal</th>
+            <th>Por qué es universal</th>
+            <th>Ejemplos (3 industrias diferentes)</th>
+        </tr>
+        <tr>
+            <td><strong>1. Falta de pruebas y validación antes del despliegue</strong></td>
+            <td>Toda empresa que maneja software o sistemas depende de la estabilidad en las actualizaciones. Omitir pruebas lleva a fallas masivas sin importar el sector.</td>
+            <td>
+                - <em>Banca:</em> TSB Bank (fallo de migración)<br>
+                - <em>Finanzas:</em> Knight Capital (error de despliegue)<br>
+                - <em>Transporte:</em> Boeing 737 MAX (errores de software no probados)
+            </td>
+        </tr>
+        <tr>
+            <td><strong>2. Comunicación deficiente entre equipos técnicos y de gestión</strong></td>
+            <td>La desconexión entre los equipos técnicos y la dirección causa decisiones sin información completa.</td>
+            <td>
+                - <em>Salud:</em> NHS Reino Unido (fallo de base de datos de pacientes)<br>
+                - <em>Tecnología:</em> Google Cloud outage 2019<br>
+                - <em>Energía:</em> apagón en Texas 2021
+            </td>
+        </tr>
+        <tr>
+            <td><strong>3. Ausencia de planes de contingencia o respaldo</strong></td>
+            <td>Los sistemas críticos deben tener copias de seguridad o estrategias de recuperación; sin ellas, el impacto es inmediato.</td>
+            <td>
+                - <em>Finanzas:</em> NASDAQ outage 2013<br>
+                - <em>Transporte:</em> Southwest Airlines 2022<br>
+                - <em>Educación:</em> Zoom 2020 (caída global)
+            </td>
+        </tr>
+        <tr>
+            <td><strong>4. Dependencia excesiva de un solo proveedor o sistema</strong></td>
+            <td>La falta de diversificación tecnológica genera vulnerabilidad.</td>
+            <td>
+                - <em>Telecomunicaciones:</em> caída de AWS 2021<br>
+                - <em>Gobierno:</em> fallos en sistemas de identificación nacionales<br>
+                - <em>Retail:</em> Amazon 2020 (fallo de servidor centralizado)
+            </td>
+        </tr>
+        <tr>
+            <td><strong>5. Falta de gestión del cambio y capacitación</strong></td>
+            <td>Los errores humanos al operar nuevos sistemas son inevitables sin entrenamiento adecuado.</td>
+            <td>
+                - <em>Banca:</em> BBVA 2018 (errores tras actualización de app)<br>
+                - <em>Salud:</em> hospitales con sistemas ERP nuevos<br>
+                - <em>Industria:</em> Ford 2019 (fallos de integración SAP)
+            </td>
+        </tr>
+    </table>
+
+    <h2>¿Qué hace que un desastre sea "catastrófico" vs "manejable"?</h2>
+
+    <table>
+        <tr>
+            <th>Tipo de desastre</th>
+            <th>Características</th>
+            <th>Ejemplos</th>
+            <th>Factores que amplifican el impacto</th>
+        </tr>
+        <tr>
+            <td><strong>Catastrófico</strong></td>
+            <td>Afecta múltiples sistemas, usuarios y procesos; sin plan de recuperación inmediata.</td>
+            <td>
+                - Knight Capital: pérdidas de 440 millones USD en 45 minutos.<br>
+                - TSB Bank: 1.9 millones de clientes sin acceso a sus cuentas.
+            </td>
+            <td>
+                - Falta de respaldo.<br>
+                - Comunicación lenta.<br>
+                - Alta dependencia de sistemas críticos.<br>
+                - Falta de liderazgo en crisis.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Manejable</strong></td>
+            <td>Impacto limitado o temporal; la empresa tiene protocolos de recuperación.</td>
+            <td>
+                - Zoom: caída global temporal 2020.<br>
+                - Microsoft Teams: error de autenticación corregido en horas.
+            </td>
+            <td>
+                - Equipos de respuesta activos.<br>
+                - Sistemas redundantes.<br>
+                - Transparencia y comunicación efectiva.
+            </td>
+        </tr>
+    </table>
+
+    <div class="conclusion">
+        <strong>Conclusión:</strong> Los desastres tecnológicos no dependen solo del sector, sino de la madurez en la gestión del cambio, las pruebas y la comunicación. Un fallo puede ser catastrófico o manejable dependiendo de la preparación previa y la cultura organizacional frente al riesgo y la innovación.
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matriz de Patrones y Consecuencias</title>
+  <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7fa;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 900px;
+        background: #fff;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+        text-align: center;
+        color: #0056b3;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #e8f1ff;
+        color: #003366;
+        font-weight: bold;
+    }
+
+    strong {
+        color: #c0392b;
+    }
+
+    tr:hover {
+        background-color: #f2f6ff;
+    }
+
+    .note {
+        font-size: 14px;
+        color: #555;
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Punto 1: Matriz de Patrones Comunes</h1>
+    <p class="note">Identificación de 12 patrones comunes en fallas y desastres tecnológicos</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Patrón común identificado</th>
+          <th>Descripción breve</th>
+          <th>Ejemplo real o teórico</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Falta de pruebas previas al despliegue</td><td>No se realizan pruebas completas antes de liberar el sistema.</td><td>Knight Capital – despliegue sin validación causó pérdidas millonarias.</td></tr>
+        <tr><td>2</td><td>Migración sin plan de respaldo</td><td>No hay rollback o backup funcional al cambiar de sistema.</td><td>TSB Bank – migración fallida sin posibilidad de revertir.</td></tr>
+        <tr><td>3</td><td>Comunicación deficiente entre equipos</td><td>Falta de coordinación entre desarrollo, QA y operaciones.</td><td>Boeing 737 MAX – errores por comunicación deficiente entre ingenieros y pilotos.</td></tr>
+        <tr><td>4</td><td>Dependencia de un solo proveedor</td><td>Falta de diversificación en componentes o software base.</td><td>Caída de AWS afecta miles de sitios simultáneamente.</td></tr>
+        <tr><td>5</td><td>Actualizaciones no controladas</td><td>Cambios en producción sin control de versiones ni revisión.</td><td>Equifax – parche no aplicado a tiempo en Apache Struts.</td></tr>
+        <tr><td>6</td><td>Falta de monitoreo post-despliegue</td><td>No se supervisa el comportamiento del sistema tras el cambio.</td><td>Knight Capital – error detectado tarde.</td></tr>
+        <tr><td>7</td><td>Entrenamiento insuficiente al personal</td><td>Usuarios o técnicos no capacitados para operar el nuevo sistema.</td><td>Hospitales NHS – errores al adoptar nuevo software médico.</td></tr>
+        <tr><td>8</td><td>Suposiciones no validadas</td><td>Se asume que todo funcionará igual tras la migración.</td><td>Mars Orbiter – error de conversión entre unidades imperiales y métricas.</td></tr>
+        <tr><td>9</td><td>Falta de documentación técnica</td><td>Migraciones sin registro detallado de dependencias.</td><td>Fallos en sistemas bancarios heredados sin documentación.</td></tr>
+        <tr><td>10</td><td>Cambios simultáneos múltiples</td><td>Se aplican varios cambios críticos al mismo tiempo.</td><td>Bank of New York Mellon – actualización concurrente causó fallo en pagos.</td></tr>
+        <tr><td>11</td><td>Ausencia de entorno de pruebas idéntico a producción</td><td>Los entornos difieren y causan comportamientos inesperados.</td><td>Problemas al migrar sistemas SAP a servidores nuevos.</td></tr>
+        <tr><td>12</td><td>Falta de gestión de riesgos</td><td>No se evalúan impactos ni escenarios de falla antes del cambio.</td><td>Therac-25 – software sin análisis de riesgo provocó muertes.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Punto 2: Tabla de Consecuencias de los Desastres</h2>
+    <p class="note">Clasificación de consecuencias, magnitud e impacto potencial en el sistema de login</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tipo de Consecuencia</th>
+          <th>Ejemplos de los desastres</th>
+          <th>Magnitud</th>
+          <th>¿Podría pasar en nuestro login?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Pérdida de vidas</td><td>Therac-25, Toyota, Boeing 737 MAX</td><td>Crítica</td><td>No aplica (no manejamos sistemas físicos).</td></tr>
+        <tr><td>Pérdida financiera</td><td>Knight Capital, TSB Bank, Equifax</td><td>Alta</td><td>Sí, si un error impide cobros o pagos.</td></tr>
+        <tr><td>Interrupción de servicios</td><td>Bank of New York Mellon, AWS, TSB Bank</td><td>Alta</td><td>Sí, podría afectar la disponibilidad del login.</td></tr>
+        <tr><td>Pérdida de datos</td><td>Equifax, NHS, Yahoo</td><td>Crítica</td><td>Sí, si no hay backups de usuarios.</td></tr>
+        <tr><td>Daño reputacional</td><td>Equifax, Boeing, TSB Bank</td><td>Media-Alta</td><td>Sí, si se filtran datos o el sistema falla repetidamente.</td></tr>
+        <tr><td>Falla en seguridad</td><td>Equifax, Apache Struts</td><td>Crítica</td><td>Sí, si no se aplican parches a tiempo.</td></tr>
+        <tr><td>Sobrecarga en soporte técnico</td><td>TSB Bank, AWS</td><td>Media</td><td>Sí, si hay errores masivos de login.</td></tr>
+        <tr><td>Pérdida de confianza del usuario</td><td>Equifax, Yahoo</td><td>Alta</td><td>Sí, especialmente si se repiten caídas.</td></tr>
+        <tr><td>Multas o sanciones legales</td><td>Equifax, NHS</td><td>Alta</td><td>Sí, si se incumple la protección de datos.</td></tr>
+        <tr><td>Retrasos en operaciones</td><td>Bank of New York Mellon</td><td>Media</td><td>Sí, si el login bloquea accesos por mantenimiento.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

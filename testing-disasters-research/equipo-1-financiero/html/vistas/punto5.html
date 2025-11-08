@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5. Desastre más aterrador</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      background: #fff;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #0056b3;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #003366;
+      margin-top: 25px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #e8f1ff;
+      color: #003366;
+      font-weight: bold;
+      width: 30%;
+    }
+
+    tr:hover {
+      background-color: #f2f6ff;
+    }
+
+    .analisis {
+      background-color: #f8f9fc;
+      padding: 15px;
+      border-left: 4px solid #0056b3;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .nombre {
+      font-weight: bold;
+      color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>5. ¿Cuál es el desastre más aterrador de otro equipo y por qué?</h1>
+
+  <!-- Caso 1 -->
+  <h2><span class="nombre">Valeria:</span> Caso Equifax 2017</h2>
+  <table>
+    <tr>
+      <th>Vulnerabilidad explotada</th>
+      <td>CVE-2017-5638 en Apache Struts (fallo en el parser de Jakarta multipart) que permitió ejecución remota de código (RCE).</td>
+    </tr>
+    <tr>
+      <th>Datos comprometidos</th>
+      <td>147 millones de personas afectadas: números de seguro social, licencias de conducir y otros datos personales sensibles.</td>
+    </tr>
+    <tr>
+      <th>Causa raíz</th>
+      <td>Falta de gestión de parches y de inventario de activos vulnerables; el servidor no se actualizó a tiempo.</td>
+    </tr>
+    <tr>
+      <th>Pruebas de seguridad faltantes</th>
+      <td>Pentesting en endpoints con subida/parsing de archivos, pruebas de ejecución remota de código y escaneos sobre componentes de terceros.</td>
+    </tr>
+    <tr>
+      <th>Impacto / costo</th>
+      <td>Pérdidas legales de 575 a 700 millones USD, daño reputacional y pérdida de confianza pública.</td>
+    </tr>
+  </table>
+
+  <div class="analisis">
+    <p><strong>¿Por qué me aterra?</strong> Porque demuestra cómo una sola actualización omitida puede comprometer la información de casi toda una población. Me asusta pensar que un error tan simple como no aplicar un parche pueda tener consecuencias globales.</p>
+    <p><strong>Conexión con mi práctica de programación:</strong> En mis proyectos actuales, esto refuerza la importancia de mantener actualizadas las dependencias y librerías. Nunca debo asumir que “si funciona, no se toca”. La seguridad debe formar parte del ciclo de desarrollo, no solo del despliegue.</p>
+  </div>
+
+  <!-- Caso 2 -->
+  <h2><span class="nombre">Ana Sofía:</span> OWASP Top 10 (Guía de seguridad en aplicaciones)</h2>
+  <table>
+    <tr>
+      <th>Definición</th>
+      <td>Lista de los 10 riesgos más críticos de seguridad en aplicaciones web, mantenida por OWASP.</td>
+    </tr>
+    <tr>
+      <th>Propósito</th>
+      <td>Concienciar y orientar sobre los principales riesgos para priorizar controles de seguridad en el desarrollo.</td>
+    </tr>
+    <tr>
+      <th>Relación con pruebas</th>
+      <td>Sirve como base para diseñar planes de pentesting, revisiones de código y pruebas automáticas en pipelines CI/CD.</td>
+    </tr>
+    <tr>
+      <th>Ejemplos de riesgos</th>
+      <td>Inyección SQL, Cross-Site Scripting (XSS), Broken Access Control, componentes vulnerables o desactualizados.</td>
+    </tr>
+  </table>
+
+  <div class="analisis">
+    <p><strong>¿Por qué me aterra?</strong> Porque muchas empresas ignoran estos 10 riesgos básicos. Me preocupa que algo tan documentado aún cause fallas graves en sistemas reales. No seguir OWASP es como manejar sin frenos sabiendo que los necesitas.</p>
+    <p><strong>Conexión con mi práctica de programación:</strong> En mi trabajo actual, trato de usar OWASP Top 10 como checklist para cada módulo que desarrollo. Así aseguro que al menos las vulnerabilidades más comunes estén mitigadas desde el inicio.</p>
+  </div>
+
+  <!-- Caso 3 -->
+  <h2><span class="nombre">Mateo:</span> Aplicación del OWASP Top 10 en QA</h2>
+  <table>
+    <tr>
+      <th>Propósito</th>
+      <td>Integrar OWASP Top 10 como criterios de aceptación de seguridad y como reglas en pipelines CI/CD (SAST/DAST).</td>
+    </tr>
+    <tr>
+      <th>Ejemplo de uso</th>
+      <td>Configurar herramientas automáticas que detecten vulnerabilidades antes del despliegue y bloqueen versiones inseguras.</td>
+    </tr>
+    <tr>
+      <th>Relación con la calidad</th>
+      <td>Mejora la confianza en los productos, reduce la deuda técnica y promueve buenas prácticas de seguridad desde el desarrollo.</td>
+    </tr>
+  </table>
+
+  <div class="analisis">
+    <p><strong>¿Por qué me aterra?</strong> Porque incluso sabiendo que existen herramientas automáticas, muchas organizaciones no las usan por “falta de tiempo”. Eso hace que errores simples lleguen a producción. Me da miedo pensar que un sistema que yo programe pueda ser vulnerado por algo evitable.</p>
+    <p><strong>Conexión con mi práctica de programación:</strong> Hoy integro análisis de seguridad automatizados en cada build. Antes de subir código, ejecuto escáneres básicos para detectar inyección o errores de acceso, aplicando lo aprendido del caso OWASP.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
