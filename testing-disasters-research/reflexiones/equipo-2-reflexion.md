@@ -11,8 +11,18 @@ Ahora lo vemos distinto. Las pruebas no son una tarea aburrida ni un simple paso
 Esta investigación nos dejó claro que un buen desarrollador no solo crea software que funcione, sino que crea software que resista. Tiene que ser seguro, confiable y probado en cada parte, simulando todo tipo de escenarios.
 
 
-Reflexión personbal - Jorge Mario
+Reflexión personal - Jorge Mario
 
-Como futuro profesional en tecnología, estos casos me dejan una lección importante: ignorar las pruebas de seguridad no solo pone en riesgo sistemas, sino también la confianza de millones de personas. Invertir tiempo en prevención, capacitación y buenas prácticas puede parecer costoso, pero es infinitamente menos caro que enfrentar las consecuencias de no hacerlo. 
+Caso 1; Knight Capital Group (2012)
 
-Estos ejemplos reflejan una verdad incómoda pero esencial: la seguridad no es un producto, es un proceso continuo. No basta con hacer pruebas una vez o confiar en herramientas automáticas; se requiere compromiso, capacitación y responsabilidad en todos los niveles del ciclo de desarrollo.
+Este caso demuestra que una mala gestión en las actualizaciones de software puede tener consecuencias devastadoras. La falta de control de versiones y de pruebas previas en un entorno seguro llevó a pérdidas multimillonarias en menos de una hora. Me hace reflexionar sobre la importancia de contar con procesos sólidos de despliegue, pruebas automatizadas y revisión antes de implementar cualquier cambio en producción.
+
+
+Caso 2; TSB Bank (2018)
+
+La migración fallida del TSB Bank muestra cómo la presión por avanzar tecnológicamente sin una adecuada planificación y validación puede dañar la confianza del cliente. Millones de usuarios afectados y enormes costos pudieron evitarse con una estrategia de pruebas más exhaustiva. Personalmente, este caso me recuerda que en los proyectos críticos no basta con cumplir plazos: la estabilidad y la experiencia del usuario deben ser prioridad absoluta.
+
+
+Caso 3; Bank of New York Mellon (1996)
+
+El fallo del Bank of New York Mellon evidencia que incluso los sistemas financieros más grandes no están exentos de errores técnicos con impactos operativos masivos. Un solo error de software fue suficiente para frenar operaciones y comprometer la liquidez del banco. Este caso me hace valorar la importancia de la redundancia, la supervisión constante y los planes de contingencia en entornos donde cada minuto de inactividad implica pérdidas millonarias.
