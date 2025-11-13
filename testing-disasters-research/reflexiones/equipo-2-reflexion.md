@@ -11,18 +11,18 @@ Ahora lo vemos distinto. Las pruebas no son una tarea aburrida ni un simple paso
 Esta investigación nos dejó claro que un buen desarrollador no solo crea software que funcione, sino que crea software que resista. Tiene que ser seguro, confiable y probado en cada parte, simulando todo tipo de escenarios.
 
 
-Reflexión personal - Jorge Mario
+## Reflexión personal - Jorge Mario
 
-Caso 1; Knight Capital Group (2012)
+## Reflexión Caso 1 – Knight Capital Group (2012)
 
-Este caso demuestra que una mala gestión en las actualizaciones de software puede tener consecuencias devastadoras. La falta de control de versiones y de pruebas previas en un entorno seguro llevó a pérdidas multimillonarias en menos de una hora. Me hace reflexionar sobre la importancia de contar con procesos sólidos de despliegue, pruebas automatizadas y revisión antes de implementar cualquier cambio en producción.
-
-
-Caso 2; TSB Bank (2018)
-
-La migración fallida del TSB Bank muestra cómo la presión por avanzar tecnológicamente sin una adecuada planificación y validación puede dañar la confianza del cliente. Millones de usuarios afectados y enormes costos pudieron evitarse con una estrategia de pruebas más exhaustiva. Personalmente, este caso me recuerda que en los proyectos críticos no basta con cumplir plazos: la estabilidad y la experiencia del usuario deben ser prioridad absoluta.
+Este caso demuestra cómo un pequeño error en una actualización de software puede tener consecuencias devastadoras en entornos financieros críticos. La falta de control de versiones, pruebas insuficientes y ejecución de código antiguo provocaron pérdidas millonarias en minutos. Reflexiono sobre la importancia de implementar entornos de prueba separados, despliegues automatizados y revisiones rigurosas antes de cualquier actualización. La calidad del software no es solo técnica: también es una cuestión de estabilidad económica y reputación empresarial.
 
 
-Caso 3; Bank of New York Mellon (1996)
+## Reflexión Caso 2 – TSB Bank (2018)
 
-El fallo del Bank of New York Mellon evidencia que incluso los sistemas financieros más grandes no están exentos de errores técnicos con impactos operativos masivos. Un solo error de software fue suficiente para frenar operaciones y comprometer la liquidez del banco. Este caso me hace valorar la importancia de la redundancia, la supervisión constante y los planes de contingencia en entornos donde cada minuto de inactividad implica pérdidas millonarias.
+El fallo de migración del TSB evidencia cómo una mala gestión en la transferencia de datos puede afectar tanto la confianza de los usuarios como la estabilidad operativa de una institución financiera. Este caso me hace reflexionar sobre la necesidad de planificar exhaustivamente los proyectos de migración, probar cada etapa en entornos controlados y contar con planes de contingencia sólidos. La tecnología sin una estrategia de gestión de riesgos adecuada puede transformar una mejora planificada en una crisis reputacional.
+
+
+## Reflexión Caso 3 – Bank of New York Mellon (1996)
+
+El incidente del Bank of New York Mellon resalta la fragilidad de los sistemas financieros ante errores de software y la importancia del monitoreo continuo. Un fallo en el procesamiento de pagos paralizó transacciones críticas y obligó al banco a recurrir a medidas extremas para mantener su liquidez. Este caso me hace valorar la resiliencia tecnológica y la necesidad de auditorías preventivas, redundancia de sistemas y pruebas constantes que garanticen la continuidad operativa ante cualquier falla.
