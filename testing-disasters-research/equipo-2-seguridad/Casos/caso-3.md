@@ -1,33 +1,9 @@
-# Caso 3
+# Caso 3 – Inyección SQL (Varios países y empresas)
 
-**¿Qué es OWASP Top 10 y cómo se relaciona con las pruebas de seguridad?**
-
-| **Elemento** | **Explicación** |
-|---------------|----------------|
-| **Definición** | Lista de los 10 riesgos más críticos de seguridad en aplicaciones web, mantenida por OWASP. |
-| **Propósito** | Servir como guía de concienciación y referencia para priorizar riesgos y controles de seguridad. |
-| **Relación con pruebas** | Se usa como base para diseñar checklists y planes de pruebas de seguridad (pentesting, revisiones de código, pruebas automáticas). |
-| **Ejemplos de riesgos típicos** | Inyección (SQL/NoSQL), Broken Access Control, Cross-Site Scripting (XSS), Vulnerable/Outdated Components, entre otros. |
-| **Ejemplo de uso en QA** | Integrar OWASP Top 10 como criterios de aceptación de seguridad en historias de usuario y como reglas en CI/CD (SAST/DAST). |
-
-
-TalkTalk (2015)
-Information Commissioner’s Office (ICO). (2016, October 5). TalkTalk fined £400,000 for failing to prevent October 2015 attack.
-https://ico.org.uk/about-the-ico/news-and-events/news-and-blogs/2016/10/talktalk-fined-400000-for-failing-to-prevent-2015-attack/
-
-Wired. (2015, October 23). TalkTalk hack: How simple SQL injection broke the telecom giant. Wired UK.
-https://www.wired.co.uk/article/talktalk-hack-explained
-
-Heartland Payment Systems (2008)
-Federal Reserve Bank of Philadelphia. (2010). The Heartland data breach: Lessons for the payments industry. FRB Philadelphia Discussion Paper.
-https://www.philadelphiafed.org
-
-Proofpoint. (2019). Heartland case: How SQL injection enabled the largest card breach. Proofpoint Security Blog.
-https://www.proofpoint.com
-
-Yahoo Voices (2012)
-Ars Technica. (2012, July 12). Hackers publish 450,000 Yahoo passwords. Ars Technica.
-https://arstechnica.com/information-technology/2012/07/hackers-publish-450000-yahoo-passwords/
-
-Wired. (2012, July 12). Yahoo Voices breach exposes plain-text passwords. Wired.
-https://www.wired.com/2012/07/yahoo-voices-hack/
+| **Elemento** | **Descripción** |
+|---------------|-----------------|
+| **Tipo de falla** | Inyección SQL por falta de validación y consultas inseguras en bases de datos. |
+| **Causa principal** | Esta falla se ha registrado en distintas partes del mundo, en empresas como TalkTalk (Reino Unido, 2015), Heartland Payment Systems (Estados Unidos, 2008) y Yahoo Voices (EE. UU., 2012). Todas tenían formularios o APIs que no validaban correctamente los datos del usuario. Los atacantes insertaron comandos SQL para extraer información confidencial directamente desde las bases de datos. |
+| **Pruebas faltantes** | No se hicieron pruebas de inyección SQL, escaneos DAST, ni revisiones de código enfocadas en la seguridad de consultas. Tampoco se validaron entradas o se aplicaron consultas parametrizadas. Faltaron pruebas automatizadas y manuales para simular ataques de inyección. |
+| **Consecuencias** | TalkTalk perdió datos de 156 000 clientes; Heartland expuso millones de tarjetas de crédito; y Yahoo filtró 450 000 credenciales. Todas enfrentaron multas, sanciones y daños irreversibles en su reputación. |
+| **Patrón común identificado** | No validar las entradas del usuario ni proteger las consultas SQL lleva a resultados catastróficos. El patrón global es no realizar pruebas básicas de seguridad sobre los puntos de entrada de datos. |
