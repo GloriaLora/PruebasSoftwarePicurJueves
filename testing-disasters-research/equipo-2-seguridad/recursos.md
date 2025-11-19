@@ -14,7 +14,7 @@ https://owasp.org/Top10
 OWASP Foundation. (2022). OWASP Web Security Testing Guide (WSTG) v4.2.
 https://owasp.org/www-project-web-security-testing-guide/
 
-Refferencia caso 3: TalkTalk (2015)
+Referencia caso 3: TalkTalk (2015)
 Information Commissioner’s Office (ICO). (2016, October 5). TalkTalk fined £400,000 for failing to prevent October 2015 attack.
 https://ico.org.uk/about-the-ico/news-and-events/news-and-blogs/2016/10/talktalk-fined-400000-for-failing-to-prevent-2015-attack/
 
