@@ -122,6 +122,7 @@ Esto convierte una consulta insegura en:
 SELECT * FROM usuarios WHERE usuario='' OR '1'='1';
 
 
+- - -
 ## Causas Típicas
 
 - Entradas sin sanitizar.  
