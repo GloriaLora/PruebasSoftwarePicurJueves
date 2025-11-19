@@ -47,7 +47,7 @@ El equipo de seguridad notificó internamente la necesidad de actualizar… pero
 
 ---
 
-# 🛡 Caso 2 — OWASP Top 10 (Aplicaciones Web – Global)
+#  Caso 2 — OWASP Top 10 (Aplicaciones Web – Global)
 
 ## ¿Qué es OWASP?
 
